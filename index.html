@@ -2,11 +2,85 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Github</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EHC Frontend Development</title>
+	<style type="text/css">
+		* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        main {
+            height: 100vh;
+        }
+
+        .image-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+        .image-text img {
+            margin-right: 15px;
+        }
+
+        .image-text ul {
+            margin-left: 15px;
+        }
+
+        .dark-mode {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        button {
+            margin: 0 auto;
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+	</style>
 </head>
 <body>
-	<h1>WELCOME TO GITHUB</h1>
-	<h2>THIS IS EHC FRONT END TRACK</h2>
+	<main>
+		<h1 style="text-align: center; padding:10px;">EHC Bootcamp 2022</h1>
+		<h2 style="text-align: center; padding:10px;">FrontEnd Development Track</h2>
+
+		<div class="image-text">
+			<img src="ehc.jpg" width="400px" height="400px" />
+			<ul>
+				<li>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. (Martin Golding</li>
+				<li>Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to produce bigger and better idiots. So far, the universe is winning. (Rick Cook)</li>
+				<li>Don’t worry if it doesn’t work right. If everything did, you’d be out of a job. (Mosher’s Law of Software Engineering)</li>
+			</ul>
+		</div>
+	</main>
+	<div class="btn">    
+       	<button onclick="darkMode()">Darkmode</button>
+    </div>
+
+    <script type="text/javascript">
+    	function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+    </script>
 </body>
 </html>
